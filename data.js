@@ -24,6 +24,12 @@ datas.push(function(){
 ====The end====
 ****/
 //Start the ordinary method
+datas.push(function(){
+if(guv("filename")=="jsq.zip"&guv("type")=="download"){
+location.href="file/download/jsq.zip";
+//documentdocumentElementinnerHTML
+}
+})
 
 //Stop the ordinary method and start the advanced method
 
