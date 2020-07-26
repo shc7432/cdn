@@ -1,0 +1,20 @@
+<meta charset=utf-8 name=viewport content="width=device-width">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<h1>Download succeeded!</h1>
+<h2>Thanks for downloading!</h2>
+<div>If you can't download,please <a id=dwn>click me</a>.</div>
+<script>
+function guv(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            try {
+                return decodeURIComponent(r[2]);
+            } catch (e) {
+                return null;
+            }
+        }
+        return null;
+    };
+dwn.href=guv("durl");dwn.download=guv("dname");
+</script>
