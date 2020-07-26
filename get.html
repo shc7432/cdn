@@ -1,4 +1,5 @@
 <script src="data.js"></script>
+<meta charset=utf-8 name=viewport content="width=device-width">
 <script>
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -15,5 +16,10 @@ function getUrlValue(name) {
         }
         return null;
     }
-
+(function(){
+for(let i=0;i<datas.length;i++){
+try{datas[i]();return}catch(e){continue;}
+}
+document.documentElement.innerHTML="404"
+})()
 </script>
