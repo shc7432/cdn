@@ -4,7 +4,7 @@
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
-function getUrlValue(name) {
+function guv(name) {
         var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
         var r = window.location.search.substr(1).match(reg);
         if (r != null) {
