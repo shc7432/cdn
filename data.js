@@ -3,10 +3,10 @@ window.datas=[];
 //Start push
 datas.push(function(){
 if(guv("filename")=="jsq2.25.zip"&guv("d")=="file"&guv("type")=="download"){ 
-var href="file/download/jsq2.25.zip";open(href);
+var href="/cdn/file/download/jsq2.25.zip";open(href);
 document.documentElement.innerHTML="Downloading..."
 setTimeout(function(){
-location.href="file/download/success?durl="+encodeURIComponent(href);
+location.href="file/download/success?dname=jsq.zip&durl="+encodeURIComponent(href);
 },5000)
 return "return";
 }});
