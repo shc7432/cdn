@@ -18,7 +18,7 @@ function guv(name) {
     };
 (function(){
 for(let i=0;i<datas.length;i++){
-try{datas[i]();}catch(e){continue;}
+try{if(datas[i]()=="return") return;}catch(e){continue;}
 }
 document.documentElement.innerHTML="404";
 return null;
