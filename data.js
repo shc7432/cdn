@@ -25,7 +25,7 @@ datas.push(function(){
 ****/
 //Start the ordinary method
 datas.push(function(){
-if(guv("filename")=="jsq.zip"&guv("type")=="download"){
+if(guv("filename")=="jsq.zip"&guv("d")=="file"&guv("type")=="download"){
 location.href="file/download/jsq.zip";
 //documentdocumentElementinnerHTML
 }
