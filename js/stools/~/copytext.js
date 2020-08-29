@@ -1,4 +1,4 @@
-copytext=function(text){
+sTools.prototype.copytext=function(text){
 if(typeof document.execCommand!=="function"){
 //alert("复制失败，请长按复制");
 return false;
