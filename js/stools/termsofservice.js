@@ -9,8 +9,8 @@ a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 <b>第一条</b> 为保证您(以下简称“用户”)和"https://shc7432.github.io"网站(以下简称“本网站”)(包括其服务)的合法权益,防止不合法的情况发生,特制定本服务条款。
 <b>第二条</b> 您可以选择拒绝本《服务条款》(以下简称“本条款”),但本网站(或其服务)可能无法使用。
 <b>第三条</b> 您有权随时取消您对本条款的授权,但请注意,根据上一条,我们有权不向您提供服务。
-        提示:在<a href="https://shc7432.github.io/cdn/js/stools/~/termsofservice.html#cancel">这里</a>取消授权(单击右键可以复制链接)
-<b>第四条</b> 您可以在<a href="https://shc7432.github.io/cdn/js/stools/~/termsofservice.html">https://shc7432.github.io/cdn/js/stools/~/termsofservice.html</a>随时查看本条款。
+        提示:在<a href="https://shc7432.github.io/cdn/js/stools/termsofservice.html#cancel">这里</a>取消授权(单击右键可以复制链接)
+<b>第四条</b> 您可以在<a href="https://shc7432.github.io/cdn/js/stools/termsofservice.html">https://shc7432.github.io/cdn/js/stools/termsofservice.html</a>随时查看本条款。
 <b>第五条</b> 本条款与法律有冲突的,以法律为准。
 <b>第六条</b> 我们有权在法律范围内使用您的这些信息,您可以立即授权,也可以待需要使用时授权:
         1) 位置信息;
