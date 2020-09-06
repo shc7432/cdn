@@ -48,6 +48,6 @@ a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 　　7）信息真实性底线</pre>
 <b>第八条</b> <b>未经允许,您不得对本网站及其服务进行反编制、反汇编等行为。</b>
 </pre><br><button onclick="localStorage.agreeToTermsOfService=true;location.reload(!!1)">同意</button> &nbsp; <button onclick="localStorage.agreeToTermsOfService=false;location.reload(!!1);">不同意</button>`
-document.body.appendChild(a);
+document.body.appendChild(a);if(location.href.indexOf("https://shc7432.github.io/cdn/js/stools/termsofservice.html")==0) return false;
 a.dialog({modal:1;autoOpen:1;hidex:1;width:75%;});
 })()
