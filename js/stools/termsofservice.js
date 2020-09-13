@@ -3,20 +3,19 @@ if(localStorage.agreeToTermsOfService||!new RegExp('zh-CN','i').test(navigator.l
 if(localStorage.agreeToTermsOfService===false){delete window.sTools;delete window.gadgetsInDomainShc7432;
 if(location.href.indexOf("https://shc7432.github.io/")==0){let a=document.createElement("div");a.setAttribute('style','width:100%;height:100%;');document.body.append(a)};return false;};
 var a=document.createElement("div");
-a.title="服务条款";
-a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
+a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 <pre style="border:1px solid #ccc;overflow:auto;width:95%;height:65%;position:relative;left:2.5%;"><center><b>服务条款</b></center>
 <b>第一条</b> 为保证您(以下简称“用户”)和"https://shc7432.github.io"网站(以下简称“本网站”)(包括其服务)的合法权益,防止不合法的情况发生,特制定本服务条款。
 <b>第二条</b> 您可以选择拒绝本《服务条款》(以下简称“本条款”),但本网站(或其服务)可能无法使用。
 <b>第三条</b> 您有权随时取消您对本条款的授权,但请注意,根据上一条,我们有权不向您提供服务。
-        提示:在<a href="https://shc7432.github.io/cdn/js/stools/termsofservice.html#cancel">这里</a>取消授权(单击右键可以复制链接)
+        提示:在<a href="javascript:delete localStorage.agreeToTermsOfService">这里</a>取消授权(单击右键可以复制链接)
 <b>第四条</b> 您可以在<a href="https://shc7432.github.io/cdn/js/stools/termsofservice.html">https://shc7432.github.io/cdn/js/stools/termsofservice.html</a>随时查看本条款。
 <b>第五条</b> 本条款与法律有冲突的,以法律为准。
 <b>第六条</b> 我们有权在法律范围内使用您的这些信息,您可以立即授权,也可以待需要使用时授权:
         1) 位置信息;
         2) cookie与本地存储;
         3) 法律许可的其他信息.
-<b>第七条</b> 使用规则<pre style="height:800px;overflow:auto;"><b>1. 用户在使用本网站的服务时，必须遵守《网络安全法》等中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法或不正当的活动，包括但不限于下列行为:
+<b>第七条</b> 使用规则<pre style="overflow:auto;"><b>1. 用户在使用本网站的服务时，必须遵守《网络安全法》等中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法或不正当的活动，包括但不限于下列行为:
 （1）上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息：
 　　1）反对宪法所确定的基本原则的；
 　　2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
@@ -47,7 +46,7 @@ a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 　　6）道德风尚底线
 　　7）信息真实性底线</pre>
 <b>第八条</b> <b>未经允许,您不得对本网站及其服务进行反编制、反汇编等行为。</b>
-</pre><br><button onclick="localStorage.agreeToTermsOfService=true;location.reload(!!1)">同意</button> &nbsp; <button onclick="localStorage.agreeToTermsOfService=false;location.reload(!!1);">不同意</button>`
-document.body.appendChild(a);if(location.href.indexOf("https://shc7432.github.io/cdn/js/stools/termsofservice.html")==0) return false;
+</pre><br><button onclick="localStorage.agreeToTermsOfService='\'agree\':true';location.reload(!0)">同意</button> &nbsp; <button onclick="localStorage.agreeToTermsOfService='{\'agree\':false}';location.reload(!0);">不同意</button>`
+document.documentElement.appendChild(a);if(location.href.indexOf("https://shc7432.github.io/cdn/js/stools/termsofservice.html")==0) return false;
 a.dialog({modal:1,autoOpen:1,hidex:1,width:"75%",height:"70%"});
 })()
