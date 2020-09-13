@@ -1,7 +1,8 @@
 (function(){
 if(localStorage.agreeToTermsOfServiceInDomainShc7432||!new RegExp('zh-CN','i').test(navigator.language)) return false;
-if(localStorage.agreeToTermsOfServiceInDomainShc7432===false){delete window.sTools;delete window.gadgetsInDomainShc7432;
-if(location.href.indexOf("https://shc7432.github.io/")==0){let a=document.createElement("div");a.setAttribute('style','width:100%;height:100%;');document.body.append(a)};return false;};
+var agr=JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432);
+if(agr.agree===false){delete window.sTools;delete window.gadgetsInDomainShc7432;
+if(location.href.indexOf("https://shc7432.github.io/")==0){let a=document.createElement("div");a.setAttribute('style','width:100%;height:100%;');document.body.append(a)};return false;} else window.gadgetsInDomainShc7432.loadExternalJs();
 var a=document.createElement("div");
 a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 <pre style="border:1px solid #ccc;overflow:auto;width:95%;height:65%;position:relative;left:2.5%;"><center><b>服务条款</b></center>
