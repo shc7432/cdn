@@ -1,5 +1,5 @@
 (function(){
-if(localStorage.agreeToTermsOfServiceInDomainShc7432||!new RegExp('zh-CN','i').test(navigator.language)) return false;
+if(JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432).agree||!new RegExp('zh-CN','i').test(navigator.language)) return false;
 try{var agr=JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432);}catch(e){if(/JSON/i.test(''+e)){localStorage.agreeToTermsOfServiceInDomainShc7432="{}"} else return e;}
 if(agr.agree===false){delete window.sTools;delete window.gadgetsInDomainShc7432;
 if(location.href.indexOf("https://shc7432.github.io/")==0){let a=document.createElement("div");a.setAttribute('style','width:100%;height:100%;');document.body.append(a)};return false;} else window.gadgetsInDomainShc7432.loadExternalJs();
