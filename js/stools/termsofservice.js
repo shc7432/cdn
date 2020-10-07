@@ -5,7 +5,7 @@ if(!agr) agr={};if(agr.agree===false){
 delete window.sTools;delete window.gadgetsInDomainShc7432;
 if(location.href.indexOf("https://shc7432.github.io/")==0){
 let a=document.createElement("div");a.setAttribute('style','position:fixed;left:0;top:0;width:100%;height:100%;z-index:2147483647;');document.body.append(a)};return false;
-} else window.gadgetsInDomainShc7432.loadExternalJs();
+} else if(agr.agree===true) window.gadgetsInDomainShc7432.loadExternalJs();
 var a=document.createElement("div");
 a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 <pre style="border:1px solid #ccc;overflow:auto;width:95%;height:65%;position:relative;left:2.5%;"><center><b>服务条款</b></center>
