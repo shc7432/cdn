@@ -50,7 +50,7 @@ a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是�
 　　6）道德风尚底线
 　　7）信息真实性底线</pre>
 <b>第八条</b> <b>未经允许,您不得对本网站及其服务进行反编制、反汇编等行为。</b>
-</pre><br><button onclick="localStorage.agreeToTermsOfServiceInDomainShc7432='\'agree\':true';location.reload(!0)">同意</button> &nbsp; <button onclick="localStorage.agreeToTermsOfServiceInDomainShc7432='{\'agree\':false}';location.reload(!0);">不同意</button>`
+</pre><br><button onclick='localStorage.agreeToTermsOfServiceInDomainShc7432="\"agree\":true";location.reload(!0)'>同意</button> &nbsp; <button onclick='localStorage.agreeToTermsOfServiceInDomainShc7432="{\"agree\":false}";location.reload(!0);'>不同意</button>`
 document.documentElement.appendChild(a);if(location.href.indexOf("https://shc7432.github.io/cdn/js/stools/termsofservice.html")==0) return false;
 a.dialog({modal:1,autoOpen:1,hidex:1,width:"75%",height:"70%"});
 })()
