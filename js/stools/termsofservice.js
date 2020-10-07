@@ -1,8 +1,11 @@
-(function(){
+(function(){try{
 if(JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432).agree||!new RegExp('zh-CN','i').test(navigator.language)) return false;
-try{var agr=JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432);}catch(e){if(/JSON/i.test(''+e)){localStorage.agreeToTermsOfServiceInDomainShc7432="{}"} else return e;}
-if(agr.agree===false){delete window.sTools;delete window.gadgetsInDomainShc7432;
-if(location.href.indexOf("https://shc7432.github.io/")==0){let a=document.createElement("div");a.setAttribute('style','width:100%;height:100%;');document.body.append(a)};return false;} else window.gadgetsInDomainShc7432.loadExternalJs();
+var agr=JSON.parse(localStorage.agreeToTermsOfServiceInDomainShc7432);}catch(e){if(/JSON/i.test(''+e)){localStorage.agreeToTermsOfServiceInDomainShc7432="{}"} else return e;}
+if(!agr) agr={};if(agr.agree===false){
+delete window.sTools;delete window.gadgetsInDomainShc7432;
+if(location.href.indexOf("https://shc7432.github.io/")==0){
+let a=document.createElement("div");a.setAttribute('style','position:fixed;left:0;top:0;width:100%;height:100%;z-index:2147483647;');document.body.append(a)};return false;
+} else window.gadgetsInDomainShc7432.loadExternalJs();
 var a=document.createElement("div");
 a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是否同意条款。
 <pre style="border:1px solid #ccc;overflow:auto;width:95%;height:65%;position:relative;left:2.5%;"><center><b>服务条款</b></center>
@@ -16,7 +19,7 @@ a.title="服务条款";a.innerHTML=`请仔细阅读服务条款,然后选择是�
         1) 位置信息;
         2) cookie与本地存储;
         3) 法律许可的其他信息.
-<b>第七条</b> 使用规则<pre style="overflow:auto;"><b>1. 用户在使用本网站的服务时，必须遵守《网络安全法》等中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法或不正当的活动，包括但不限于下列行为:
+<b>第七条</b> 使用规则<pre style="font-size:9px;"><b>1. 用户在使用本网站的服务时，必须遵守《网络安全法》等中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法或不正当的活动，包括但不限于下列行为:
 （1）上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息：
 　　1）反对宪法所确定的基本原则的；
 　　2）危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
