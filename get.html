@@ -22,13 +22,15 @@
                 }
                 return null;
             };
-        (function(){
-        for(let i=0;i<datas.length;i++){
-        try{if(datas[i]()=="return") return;}catch(e){continue;}
-        }
-        document.documentElement.innerHTML="404";
-        return null;
-        })()
+        window.addEventListener('load',function(){
+            for(let i=0;i<datas.length;i++){
+                try{
+                    if(datas[i]()=="return") return;
+                }catch(e){ continue; }
+            }
+            document.documentElement.innerHTML="404";
+            return null;
+        });
     </script>
 </body>
 
