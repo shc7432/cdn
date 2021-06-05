@@ -1,26 +1,34 @@
-<script src="data.js"></script>
-<meta charset=utf-8 name=viewport content="width=device-width">
-<script>
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-function guv(name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-            try {
-                return decodeURIComponent(r[2]);
-            } catch (e) {
-                return null;
-            }
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="data.js"></script>
+        <meta charset=utf-8 name=viewport content="width=device-width">
+    </head>
+<body>
+    <script>
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
         }
+        function guv(name) {
+                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    try {
+                        return decodeURIComponent(r[2]);
+                    } catch (e) {
+                        return null;
+                    }
+                }
+                return null;
+            };
+        (function(){
+        for(let i=0;i<datas.length;i++){
+        try{if(datas[i]()=="return") return;}catch(e){continue;}
+        }
+        document.documentElement.innerHTML="404";
         return null;
-    };
-(function(){
-for(let i=0;i<datas.length;i++){
-try{if(datas[i]()=="return") return;}catch(e){continue;}
-}
-document.documentElement.innerHTML="404";
-return null;
-})()
-</script>
+        })()
+    </script>
+</body>
+
+</html>
