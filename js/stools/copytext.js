@@ -1,4 +1,4 @@
-sTools.prototype.copytext=function(text){
+gadgetsInDomainShc7432.prototype.copytext=function(text){
 if(typeof document.execCommand!=="function"){
 //alert("复制失败，请长按复制");
 return false;
@@ -54,3 +54,4 @@ document.execCommand('copy');
 //alert("复制成功")
 return true;
 }
+gadgetsInDomainShc7432.addItem('copytext',gadgetsInDomainShc7432.prototype.copytext)
