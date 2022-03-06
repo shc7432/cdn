@@ -1,4 +1,10 @@
 gadgetsInDomainShc7432.addItem('copytext', function (text) {
+    /* support for new browsers */
+    if (window.navigator.clipboard) {
+        return window.navigator.clipboard.writeText(text);
+    }
+    
+    /* supports for old browsers */ {
     if (typeof document.execCommand !== "function") {
         //alert("复制失败，请长按复制");
         return false;
@@ -53,4 +59,5 @@ gadgetsInDomainShc7432.addItem('copytext', function (text) {
     document.execCommand('copy');
     //alert("复制成功")
     return true;
+    } /* [End] supports for old browsers [enD] */
 });
